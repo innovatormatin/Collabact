@@ -28,9 +28,9 @@ const Navbar = () => {
     }
   }, [location]);
   return (
-    <nav className="navbar" onClick={() => mobmenuHandler()}>
+    <nav className="navbar">
       <i id="menuButton">
-        <FiMenu />
+        <FiMenu onClick={() => mobmenuHandler()}/>
         <ul id="mobileMenu" style={{ display: mobmenu ? "block" : "none" }}>
           <span></span>
           <Link to="/">

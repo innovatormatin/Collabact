@@ -1,0 +1,293 @@
+/* ----------------------------------------------------------------------------------- */
+/*                        home section 1                                               */
+/* ----------------------------------------------------------------------------------- */
+.homeSection1 {
+    height: 550px;
+    position: relative;
+    z-index: 2;
+}
+
+.homebanner {
+    max-width: 1300px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.homebanner img {
+    width: 100%;
+}
+
+.bannerHeading {
+    color: white;
+    text-shadow: 0px 12px 6px #00000029;
+    position: absolute;
+    top: 40%;
+    transform: translate(0, -60%);
+    font-family: 'Poppins Bold';
+    padding: 0 3rem;
+}
+
+.bannerHeading h1 {
+    font-size: 4.5rem;
+}
+
+.bannerHeading h2 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.headerSocial {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+}
+
+.headerSocial svg {
+    font-size: 1.8rem;
+    margin: .7rem 0;
+    cursor: pointer;
+    transition: all ease-in-out 300ms;
+}
+
+.headerSocial svg:hover {
+    color: var(--yellow);
+}
+
+.advantage {
+    position: absolute;
+    font-family: 'Poppins';
+    z-index: 99;
+    bottom: 3rem;
+    right: 15rem;
+}
+
+.advantage h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Poppins Bold';
+    padding: 1rem 3rem;
+    background-color: var(--darkgray);
+}
+
+.adcardContainer {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 60px;
+}
+
+.adcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 48%;
+}
+
+.adcard i {
+    position: absolute;
+    text-align: center;
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    top: 4rem;
+}
+
+.adcard svg {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.adcard h6 {
+    font-size: 1.3rem;
+    background-color: white;
+    width: 90%;
+    text-align: center;
+    padding: 1rem 0 4rem 0;
+}
+
+.adcard div {
+    width: 100%;
+    background-color: var(--darkgray);
+    padding: 3.5rem 0rem 1rem 0rem;
+    text-align: center;
+}
+
+.adcard div strong {
+    font-size: .9rem;
+    line-height: 3rem;
+}
+
+.adcard div hr {
+    border: none;
+    background-color: white;
+    height: 2px;
+    width: 30px;
+    margin: auto;
+}
+
+.adb1,
+.adb2 {
+    position: absolute;
+    bottom: -1.2rem;
+    border-radius: 20px;
+    padding: .6rem;
+    width: 10rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    transition: all ease-in-out 300ms;
+}
+
+.adb1 {
+    background: transparent radial-gradient(closest-side at 22% 88%, #FFFFFF 0%, #0D72B8 100%) 0% 0% no-repeat padding-box;
+    color: white;
+}
+
+.adb2 {
+    background: transparent radial-gradient(closest-side at 22% 88%, #FFFFFF 0%, #FFC114 100%) 0% 0% no-repeat padding-box;
+}
+
+.adb1:hover, .adb2:hover {
+    box-shadow: 0px 3px 18px #00000029;
+}
+
+.adb2 span {
+    color: red;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+/*                        home section 2                                               */
+/* ----------------------------------------------------------------------------------- */
+.homeSection2 {
+    background-color: var(--lightgray);
+    height: 900px;
+    position: relative;
+    z-index: 1;
+}
+
+.homeSection2 div {
+    height: 100%;
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.homeSection2 h2 {
+    font-size: 3rem;
+    font-family: 'Poppins Bold';
+    line-height: 4rem;
+}
+
+.homeSection2 h3 {
+    font-size: 2rem;
+    font-family: 'Poppins Bold';
+}
+
+.homeSection2 p {
+    font-size: 1rem;
+    font-family: 'Poppins';
+    margin-top: 1rem;
+    max-width: 670px;
+}
+
+.homeSection2 button {
+    background-color: var(--darkgray);
+    font-size: 1rem;
+    padding: .9rem 1.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-left: 7rem;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------- */
+/*                        home section 3                                               */
+/* ----------------------------------------------------------------------------------- */
+.homeSection3 {
+    position: relative;
+    height: 1200px;
+    z-index: 2;
+}
+
+.industrySegment span {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--lightgray);
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+
+}
+
+.industrySegment {
+    width: 90%;
+    background-color: white;
+    font-family: 'Poppins';
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0px 30px 73px #BCBCBC4A;
+}
+
+.industrySegment h2 {
+    font-weight: 500;
+    text-align: center;
+    margin: 5rem 0;
+    font-size: 2rem;
+}
+
+.industrySegment h2 strong {
+    font-weight: 600;
+}
+
+.industrySegmentGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 0 5rem 5rem 5rem;
+}
+
+.segmentCard {
+    height: 250px;
+    border: solid 1px #707070;
+    display: flex;
+    padding: 1.5rem;
+}
+
+#sepSegment {
+    flex-direction: column;
+}
+
+#sepSegment .b1 {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.segmentCard img {
+    width: 37px;
+    height: 40px;
+    margin-right: 2.5rem;
+}
+
+.segmentCard ul h5 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.segmentCard ul {
+    list-style: disc;
+}

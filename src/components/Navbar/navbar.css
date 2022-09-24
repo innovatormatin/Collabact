@@ -23,6 +23,7 @@
 
 #ourOfferMenu {
     color: #0000008e;
+    z-index: 2;
 }
 
 #ourOfferMenu:hover .offerList {
