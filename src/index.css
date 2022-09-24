@@ -1,13 +1,69 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* colors */
+:root {
+  --blue: #0099E6;
+  --darkblue: #0D72B8;
+  --yellow: #FFC727;
+  --dirtyyellow: #C38F04;
+  --lightgray: #B5C2CF;
+  --lightblack: #505050;
+  --lightviolet: #3E416C;
+}
+
+/* Segoe UI Font family */
+@font-face {
+  font-family: 'Segoe UI';
+  src: local('SegoeUI'), url(./assets/font/Segoe\ UI.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: local('SegoeUIBold'), url(./assets/font/Segoe\ UI\ Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Segoe UI Italic';
+  src: local('SegoeUIItalic'), url(./assets/font/Segoe\ UI\ Italic.woff) format('woff');
+}
+
+/* Poppins Font family */
+@font-face {
+  font-family: 'Poppins';
+  src: local('Poppins'), url(./assets/font/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Bold';
+  src: local('PoppinsBold'), url(./assets/font/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins Italic';
+  src: local('PoppinsItalic'), url(./assets/font/Poppins-Italic.ttf) format('truetype');
+}
+
+button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  font-family: 'Poppins';
+}
+
+a{
+  text-decoration: none;
+}
+
+input{
+  border: none;
+  outline: none;
+  font-family: 'Segoe UI';
+}
+
+ul{
+  list-style: none;
 }
