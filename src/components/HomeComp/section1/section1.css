@@ -4,12 +4,11 @@
 .homeSection1 {
     height: 550px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 
 .homebanner {
     max-width: 1300px;
-    overflow: hidden;
     margin: auto;
     position: relative;
 }
@@ -19,6 +18,7 @@
 }
 
 .bannerHeading {
+    width: 100%;
     color: white;
     text-shadow: 0px 12px 6px #00000029;
     position: absolute;
@@ -60,13 +60,15 @@
     position: absolute;
     font-family: 'Poppins';
     z-index: 99;
-    bottom: 3rem;
-    right: 15rem;
+    bottom: 10rem;
+    right: 3rem;
 }
 
 .advantage h5 {
     text-align: center;
     font-size: 1.5rem;
+    color: black;
+    text-shadow: none;
     font-weight: 600;
     font-family: 'Poppins Bold';
     padding: 1rem 3rem;
@@ -105,6 +107,8 @@
 
 .adcard h6 {
     font-size: 1.3rem;
+    color: black;
+    text-shadow: none;
     background-color: white;
     width: 90%;
     text-align: center;
@@ -121,6 +125,8 @@
 .adcard div strong {
     font-size: .9rem;
     line-height: 3rem;
+    color: black;
+    text-shadow: none;
 }
 
 .adcard div hr {
@@ -152,12 +158,212 @@
     background: transparent radial-gradient(closest-side at 22% 88%, #FFFFFF 0%, #FFC114 100%) 0% 0% no-repeat padding-box;
 }
 
-.adb1:hover, .adb2:hover {
+.adb1:hover,
+.adb2:hover {
     box-shadow: 0px 3px 18px #00000029;
 }
 
 .adb2 span {
     color: red;
+}
+
+/* first break */
+@media screen and (max-width: 1420px) {
+    .homebanner {
+        max-width: 90%;
+    }
+
+    .homeSection1 {
+        height: 35vw;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .advantage {
+        bottom: 7rem;
+    }
+
+    .headerSocial {
+        left: 10px;
+    }
+
+    .advantage h5 {
+        font-size: 1rem;
+    }
+
+    .adcardContainer {
+        top: 45px;
+    }
+
+    .adcard i {
+        width: 35px;
+        height: 35px;
+        top: 3rem;
+    }
+
+    .adcard h6 {
+        font-size: 1rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .adcard div strong {
+        font-size: .65rem;
+        line-height: 2rem;
+    }
+
+    .adb1,
+    .adb2 {
+        font-size: .65rem;
+        width: 7.5rem;
+    }
+
+    .bannerHeading h1 {
+        font-size: 3.2rem;
+    }
+
+    .bannerHeading h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .bannerHeading h1 {
+        font-size: 2.5rem;
+    }
+
+    .bannerHeading h2 {
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+    }
+
+    .advantage {
+        bottom: 4rem;
+    }
+
+    .advantage h5 {
+        font-size: .9rem;
+        padding: 1rem 2rem;
+    }
+
+    .headerSocial svg {
+        font-size: 1.2rem;
+    }
+
+    .adcard div {
+        padding-top: 2rem;
+    }
+
+    .adcard i {
+        height: 25px;
+        width: 25px;
+    }
+
+    .adcard svg {
+        font-size: 1rem;
+    }
+
+    .adcard div strong {
+        font-size: .55rem;
+        line-height: 1.5rem;
+    }
+
+    .adb1,
+    .adb2 {
+        font-size: .55rem;
+        width: 6.5rem;
+        padding: 0.5rem;
+        bottom: -0.9rem;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .bannerHeading {
+        top: 50%;
+        transform: translate(0, -60%);
+    }
+
+    .bannerHeading h1 {
+        font-size: 2rem;
+    }
+
+    .bannerHeading h2 {
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+
+    .advantage {
+        bottom: -1rem;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 90%;
+    }
+
+    .headerSocial {
+        left: 5px;
+        top: 25%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .headerSocial {
+        display: none;
+    }
+
+    .bannerHeading {
+        padding: 0 1.5rem;
+    }
+
+    .bannerHeading h1 {
+        font-size: 1.2rem;
+    }
+
+    .bannerHeading h2 {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .advantage h5 {
+        font-size: .65rem;
+        padding: .5rem 2rem;
+    }
+
+    .adcardContainer {
+        top: 28px;
+    }
+
+    .adcard h6 {
+        font-size: .75rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .adcard i {
+        height: 15px;
+        width: 15px;
+        padding: 10px;
+        display: grid;
+        top: 2.6rem;
+    }
+
+    .adcard div {
+        padding: 1.3rem 0 0.5rem 0;
+    }
+
+    .adcard div strong {
+        font-size: .42rem;
+        line-height: 2rem;
+    }
+
+    .adcard div hr {
+        width: 15px;
+    }
+
+    .adb1,
+    .adb2 {
+        padding: 0.2rem;
+        width: 6rem;
+        bottom: -0.6rem;
+    }
 }
 
 
@@ -168,7 +374,7 @@
     background-color: var(--lightgray);
     height: 900px;
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 .homeSection2 div {
@@ -190,6 +396,7 @@
 .homeSection2 h3 {
     font-size: 2rem;
     font-family: 'Poppins Bold';
+    margin-top: 8rem;
 }
 
 .homeSection2 p {
@@ -209,14 +416,57 @@
 }
 
 
+@media screen and (max-width: 1280px) {
+    .homeSection2 {
+        height: 800px;
+    }
+}
 
+@media screen and (max-width: 730px) {
+    .homeSection2 {
+        text-align: center;
+    }
+
+    .homeSection2 h2 {
+        width: 100%;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .homeSection2 h3 {
+        font-size: 1.5rem;
+        width: 100%;
+        margin-top: 15rem;
+    }
+
+    .homeSection2 button {
+        font-size: .8rem;
+        padding: .5rem 1rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .homeSection2 {
+        height: 700px;
+    }
+    .homeSection2 h2 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+    }
+    .homeSection2 h3 {
+        margin-top: 10rem;
+        font-size: 1rem;
+    }
+}
 
 /* ----------------------------------------------------------------------------------- */
 /*                        home section 3                                               */
 /* ----------------------------------------------------------------------------------- */
 .homeSection3 {
     position: relative;
-    height: 1200px;
+    height: 1000px;
     z-index: 2;
 }
 
@@ -256,16 +506,17 @@
 .industrySegmentGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-gap: 1rem;
-    padding: 0 5rem 5rem 5rem;
+    padding: 0 9.5rem 5rem 9.5rem;
 }
 
 .segmentCard {
-    height: 250px;
-    border: solid 1px #707070;
+    height: 170px;
+    border: solid 5px var(--yellow);
     display: flex;
     padding: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #sepSegment {
@@ -284,10 +535,145 @@
 }
 
 .segmentCard ul h5 {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-size: .9rem;
+    margin-bottom: .5rem;
 }
 
 .segmentCard ul {
     list-style: disc;
+}
+
+.segmentCard ul li {
+    font-size: .8rem;
+}
+
+.onMobSegment {
+    display: none;
+}
+
+@media screen and (max-width: 1485px) {
+    .homeSection3 {
+        height: 950px;
+    }
+
+    .industrySegmentGrid {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .industrySegmentGrid {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .homeSection3 {
+        height: 900px;
+    }
+
+    .industrySegmentGrid {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .segmentCard ul h5 {
+        font-size: .75rem;
+        margin-bottom: .2rem;
+    }
+
+    .segmentCard {
+        padding: 1rem;
+    }
+
+    .segmentCard img {
+        width: 25px;
+        height: 30px;
+        margin-right: 2rem;
+    }
+
+    .segmentCard ul li {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .homeSection3 {
+        height: 450px;
+    }
+
+    .ondeskSegment {
+        display: none;
+    }
+
+    .custom-button-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .custom-button-group button {
+        background-color: transparent;
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .custom-button-group div {
+        margin: 0 10px;
+        font-size: .8rem;
+    }
+
+    .onMobSegment {
+        display: block;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .industrySegment h2 {
+        margin: 4rem 0;
+    }
+
+    .segmentCard {
+        width: 230px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .industrySegment h2 strong {
+        margin-left: 15px;
+    }
+
+    .industrySegment h2 {
+        font-size: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 320px;
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .segmentCard {
+        width: 185px;
+        border-width: 3px;
+    }
+
+    .segmentCard img {
+        margin-right: 1.1rem;
+    }
+
+    .segmentCard ul h5 {
+        font-size: .8rem;
+        margin: 5px 0;
+    }
+
+    .segmentCard ul li {
+        font-size: .65rem;
+    }
 }
