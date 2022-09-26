@@ -26,6 +26,7 @@
     transform: translate(0, -60%);
     font-family: 'Poppins Bold';
     padding: 0 3rem;
+    font-weight: 500;
 }
 
 .bannerHeading h1 {
@@ -65,12 +66,13 @@
 }
 
 .advantage h5 {
+    border-radius: 10px;
     text-align: center;
     font-size: 1.5rem;
     color: black;
     text-shadow: none;
-    font-weight: 600;
     font-family: 'Poppins Bold';
+    font-weight: 500;
     padding: 1rem 3rem;
     background-color: var(--darkgray);
 }
@@ -113,6 +115,8 @@
     width: 90%;
     text-align: center;
     padding: 1rem 0 4rem 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .adcard div {
@@ -120,6 +124,8 @@
     background-color: var(--darkgray);
     padding: 3.5rem 0rem 1rem 0rem;
     text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .adcard div strong {
@@ -306,6 +312,10 @@
 }
 
 @media screen and (max-width: 550px) {
+    .homeSection1 {
+        height: 20vw;
+    }
+
     .headerSocial {
         display: none;
     }
@@ -326,6 +336,7 @@
     .advantage h5 {
         font-size: .65rem;
         padding: .5rem 2rem;
+        border-radius: 5px;
     }
 
     .adcardContainer {
@@ -335,6 +346,8 @@
     .adcard h6 {
         font-size: .75rem;
         padding-bottom: 1.5rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 
     .adcard i {
@@ -346,16 +359,20 @@
     }
 
     .adcard div {
-        padding: 1.3rem 0 0.5rem 0;
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        padding: 2rem 0 1rem 0;
     }
 
     .adcard div strong {
         font-size: .42rem;
-        line-height: 2rem;
+        line-height: 0.5rem;
     }
 
     .adcard div hr {
         width: 15px;
+        margin: 3px auto;
     }
 
     .adb1,
@@ -363,6 +380,22 @@
         padding: 0.2rem;
         width: 6rem;
         bottom: -0.6rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .bannerHeading h1 {
+        font-size: 1rem;
+    }
+
+    .bannerHeading h2 {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    .advantage h5 {
+        font-size: .55rem;
+        padding: 0.5rem 1rem;
     }
 }
 
@@ -391,12 +424,14 @@
     font-size: 3rem;
     font-family: 'Poppins Bold';
     line-height: 4rem;
+    font-weight: 500;
 }
 
 .homeSection2 h3 {
     font-size: 2rem;
     font-family: 'Poppins Bold';
     margin-top: 8rem;
+    font-weight: 500;
 }
 
 .homeSection2 p {
@@ -443,7 +478,8 @@
         font-size: .8rem;
         padding: .5rem 1rem;
         margin-top: 2rem;
-        margin-left: 1rem;
+        margin-left: 50%;
+        transform: translate(-50%, 0%);
     }
 }
 
@@ -451,13 +487,19 @@
     .homeSection2 {
         height: 700px;
     }
+
     .homeSection2 h2 {
         font-size: 1.2rem;
         line-height: 1.5rem;
     }
+
     .homeSection2 h3 {
-        margin-top: 10rem;
+        margin-top: 8rem;
         font-size: 1rem;
+    }
+
+    .homeSection2 p {
+        font-size: .8rem;
     }
 }
 

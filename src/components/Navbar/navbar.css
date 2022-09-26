@@ -2,8 +2,14 @@
     font-family: 'Segoe UI';
     width: 100%;
     padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -36,6 +42,8 @@
     background-color: var(--blue);
     width: 15px;
     height: 15px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     top: -5px;
     left: 10px;
@@ -53,7 +61,11 @@
     font-size: .9rem;
     line-height: 2.5rem;
     padding: 0 1.5rem;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
     min-width: max-content;
+    -webkit-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
     transition: all ease-in-out 300ms;
 }
 
@@ -64,15 +76,24 @@
 .navItems {
     max-width: 1125px;
     width: -webkit-fill-available;
+    width: -moz-available;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0 3rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .navItems a {
     color: #0000008e;
+    -webkit-transition: all ease-in-out 100ms;
+    -o-transition: all ease-in-out 100ms;
     transition: all ease-in-out 100ms;
 }
 
@@ -82,6 +103,8 @@
     cursor: pointer;
     line-height: 1rem;
     padding: .4rem 0;
+    -webkit-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
     transition: all ease-in-out 300ms;
 }
 
@@ -90,6 +113,8 @@
 }
 
 .logInOut {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 160px;
 }
@@ -100,6 +125,8 @@
     color: white;
     border-radius: 4px;
     background-color: var(--blue);
+    -webkit-transition: all ease-in-out 300ms;
+    -o-transition: all ease-in-out 300ms;
     transition: all ease-in-out 300ms;
     margin-left: 5px;
 }
@@ -156,12 +183,15 @@
         z-index: -1;
         top: -4px;
         left: 7px;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
     }
 
-    #mobileMenu a{
+    #mobileMenu a {
         color: white;
     }
+
     #mobileMenu {
         z-index: 2;
         position: absolute;
@@ -174,11 +204,15 @@
         padding: 1rem 0;
         background-color: var(--yellow);
         border-radius: 3px;
+        -webkit-transition: all ease-in-out 300ms;
+        -o-transition: all ease-in-out 300ms;
         transition: all ease-in-out 300ms;
     }
 
     #mobileMenu li {
         padding: .7rem 1rem .3rem 1rem;
+        -webkit-transition: all ease-in-out 300ms;
+        -o-transition: all ease-in-out 300ms;
         transition: all ease-in-out 300ms;
     }
 
@@ -195,6 +229,8 @@
     }
 
     .navItems {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         padding: 0 1rem;
     }

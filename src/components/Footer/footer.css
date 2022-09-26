@@ -44,6 +44,7 @@
 .footerlist strong {
     font-family: 'Segoe UI Bold';
     font-size: .9rem;
+    font-weight: inherit;
 }
 
 .footerlist li {
@@ -57,6 +58,7 @@
     font-size: 1rem;
     font-family: 'Segoe UI Bold';
     margin-bottom: .5rem;
+    font-weight: inherit;
 }
 
 .subscribeNews input {
@@ -133,7 +135,7 @@
 
     .subscribeNews button {
         height: 25px;
-        padding: .4rem 1rem;
+        padding: 0rem 1rem;
         font-size: .7rem;
     }
 }
@@ -210,5 +212,13 @@
         width: max-content;
         margin: auto;
         padding: .4rem 0;
+    }
+}
+
+
+/* Third break point */
+@media screen and (max-width: 380px) {
+    .grayTap {
+        max-width: 270px;
     }
 }

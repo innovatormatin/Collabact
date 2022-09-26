@@ -3,6 +3,15 @@
   padding: 0;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 /* colors */
 :root {
   --blue: #0099E6;
@@ -24,6 +33,7 @@
 @font-face {
   font-family: 'Segoe UI Bold';
   src: local('SegoeUIBold'), url(./assets/font/Segoe\ UI\ Bold.woff) format('woff');
+  font-weight: 500;
 }
 
 @font-face {
@@ -47,28 +57,31 @@
   src: local('PoppinsItalic'), url(./assets/font/Poppins-Italic.ttf) format('truetype');
 }
 
-button{
+button {
   border: none;
   outline: none;
   cursor: pointer;
+  -webkit-transition: all ease-in-out 300ms;
+  -o-transition: all ease-in-out 300ms;
   transition: all ease-in-out 300ms;
   font-family: 'Poppins';
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-input{
+input {
   border: none;
   outline: none;
   font-family: 'Segoe UI';
 }
 
-ul{
+ul {
   list-style: none;
 }
-.container{
+
+.container {
   max-width: 1440px;
   margin: auto;
 }
