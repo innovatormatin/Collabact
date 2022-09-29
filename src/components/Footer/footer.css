@@ -19,6 +19,8 @@
     align-items: center;
     justify-content: space-evenly;
     padding: .5rem 0;
+    max-width: 1440px;
+    margin: auto;
 }
 
 .tap span {
