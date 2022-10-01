@@ -97,15 +97,17 @@
 }
 
 @media screen and (max-width: 900px) {
-    .ecbgridconainer{
+    .ecbgridconainer {
         max-width: 565px;
     }
+
     .ecbgrid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 }
+
 @media screen and (max-width: 600px) {
     .ecbgridconainer {
         max-width: 280px;
@@ -169,24 +171,250 @@
         margin: 2rem auto;
     }
 }
+
 @media screen and (max-width: 1024px) {
     .esp img {
         width: 90%;
     }
+
     .esp h3 {
         width: 90%;
         font-size: 1.5rem;
         margin: 1.4rem auto;
     }
 }
+
 @media screen and (max-width: 600px) {
-    .esp{
+    .esp {
         padding-bottom: 2rem;
     }
+
     .esp h3 {
         width: 90%;
         text-align: center;
         font-size: .95rem;
         margin: 1rem auto;
+    }
+}
+
+/******************************************************/
+/*                     Upcoming Event                 */
+/******************************************************/
+
+.event {
+    position: relative;
+    font-family: 'Poppins';
+}
+
+.event .worldmap {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+.eventContainer {
+    max-width: 1350px;
+    min-height: 300px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.upcomingevent {
+    width: 59%;
+}
+
+.vedios {
+    width: 39%;
+}
+
+.eventheader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0;
+    font-weight: lighter;
+}
+
+.eventheader strong {
+    font-family: 'Poppins Bold';
+    font-weight: 500;
+}
+
+.eventheaderhr1,
+.eventheaderhr2 {
+    border: none;
+    height: 8px;
+    background-color: var(--dirtyyellow);
+    margin-left: 20px;
+}
+
+.eventheaderhr1 {
+    width: 67%;
+}
+
+.eventheaderhr2 {
+    width: 55%;
+}
+
+.eventcard {
+    margin: 1.5rem 0;
+    width: 90%;
+}
+
+.eventcard strong {
+    color: var(--blue);
+    font-family: 'Poppins Bold';
+    font-family: 500;
+}
+
+.eventcard p {
+    margin-top: .8rem;
+}
+
+.react-multi-carousel-dot-list {
+    width: 70%;
+    left: 40%;
+    transform: translate(-60%, 0);
+    bottom: 5rem;
+}
+
+.react-multi-carousel-dot--active button {
+    background-color: var(--blue) !important;
+}
+
+.popup {
+    position: relative;
+    background-color: var(--blue);
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    color: white;
+}
+
+.popup img {
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.popup span {
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    left: 10px;
+    bottom: -5px;
+    position: absolute;
+    background-color: var(--blue);
+    z-index: -1;
+}
+
+.user {
+    margin: 1rem auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+.user div {
+    margin-left: 1rem;
+}
+
+.user div h4 {
+    font-family: 'Poppins Bold';
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.user div h5 {
+    color: var(--blue);
+}
+
+@media screen and (max-width: 1400px) {
+    .eventContainer {
+        max-width: 900px;
+    }
+
+    .eventheaderhr1 {
+        width: 55%;
+    }
+
+    .eventheaderhr2 {
+        width: 33%;
+    }
+
+    .popup {
+        padding: 1.3rem;
+    }
+
+    .popup img {
+        width: 80px;
+        padding-right: 1.3rem;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .eventContainer {
+        flex-direction: column;
+        width: max-content;
+    }
+
+    .upcomingevent {
+        margin-bottom: 2rem;
+    }
+
+    .upcomingevent,
+    .vedios {
+        width: 400px;
+    }
+
+    .react-multi-carousel-dot-list {
+        top: 12rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .eventheaderhr1 {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .upcomingevent, .vedios{
+        width: 310px;
+    }
+    .vedios{
+        margin-top: 1rem;
+    }
+    .eventcard{
+        margin: 0.5rem 0;
+        width: 100%;
+        text-align: center;
+    }
+    .react-multi-carousel-dot-list{
+        top: 11rem;
+    }
+    .eventheader{
+        font-size: .8rem;
+    }
+    .eventheaderhr1{
+        height: 4px;
+        width: 40%;
+    }
+    .eventheaderhr2{
+        height: 4px;
+        width: 27%;
+    }
+    .popup p{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .upcomingevent, .vedios{
+        width: 260px;
+    }
+    .eventheaderhr2{
+        width: 23%;
     }
 }
